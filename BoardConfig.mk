@@ -127,9 +127,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
-# TW_INCLUDE_CRYPTO := true
-# TW_INCLUDE_CRYPTO_FBE := true
-# TW_INCLUDE_FBE_METADATA_DECRYPT := true
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
@@ -145,8 +145,6 @@ TARGET_USES_MKE2FS := true
 TW_EXCLUDE_APEX := true
 TW_OZIP_DECRYPT_KEY := 1C4C1EA3A12531AE491B21BB31613C11
 TW_INCLUDE_LOGICAL := my_product my_engineering my_company my_carrier my_region my_heytap my_stock my_preload my_manifest my_bigball
-
-TW_DEVICE_VERSION := Col_or
 
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
