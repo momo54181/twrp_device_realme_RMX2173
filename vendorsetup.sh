@@ -44,11 +44,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_BUILD_TYPE="Unofficial-Stable"
 
 # Custom pic for the maintainer's info in about section
-	export OF_MAINTAINER_AVATAR="/device/realme/RMX2173/Maintainer.png"
+	#export OF_MAINTAINER_AVATAR="/device/realme/RMX2173/Maintainer.png"
 	
 # Device Information.
 	export FOX_ARCH=arm64
-	export FOX_VARIANT="A12_FBE"
+	#export FOX_VARIANT="A12_FBE"
 	export TARGET_DEVICE_ALT="RMX2173" # I am not what are the over possible names.
     export OF_KEEP_DM_VERITY_FORCED_ENCRYPTION=1
 
