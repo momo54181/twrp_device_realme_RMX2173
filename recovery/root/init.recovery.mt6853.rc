@@ -1,5 +1,4 @@
 import /tee.rc
-import /trustonic.rc
 
 on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
@@ -73,22 +72,16 @@ on property:ro.crypto.state=unsupported
     stop mobicore
     stop keymaster-4-1
     stop gatekeeper-1-0
-    stop servicemanager
-    stop hwservicemanager
 
 on property:ro.crypto.state=unencrypted
     stop mobicore
     stop keymaster-4-1
     stop gatekeeper-1-0
-    stop servicemanager
-    stop hwservicemanager
 
 on property:twrp.decrypt.done=true
     stop mobicore
     stop keymaster-4-1
     stop gatekeeper-1-0
-    stop servicemanager
-    stop hwservicemanager
 
 on post-fs-data
     mkdir /data/vendor_de 0770 system system
