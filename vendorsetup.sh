@@ -40,7 +40,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 # Version / Maintainer infos.
 	export OF_MAINTAINER="Momo5418"
-	export FOX_MAINTAINER_PATCH_VERSION="R11.1"
+	#export FOX_MAINTAINER_PATCH_VERSION="R11.1"
 	export FOX_BUILD_TYPE="Unofficial-Stable"
 
 # Custom pic for the maintainer's info in about section
