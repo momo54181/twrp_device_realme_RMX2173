@@ -33,7 +33,7 @@ PRODUCT_MODEL := realme Q2 Pro 5G
 PRODUCT_MANUFACTURER := realme
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.treble.enabled=true 
+    ro.treble.enabled=true
 
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
