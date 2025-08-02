@@ -42,9 +42,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_MAINTAINER="Momo5418"
 	#export FOX_MAINTAINER_PATCH_VERSION="R11.1"
 	export FOX_BUILD_TYPE="Unofficial-Stable"
-
+    export OF_STATUS_H="102"
+	export OF_STATUS_INDENT_LEFT="155"
+	export OF_STATUS_INDENT_RIGHT="48"
+	export OF_SCREEN_H="2400"
 # Custom pic for the maintainer's info in about section
-	#export OF_MAINTAINER_AVATAR="/device/realme/RMX2173/Maintainer.png"
+	export OF_MAINTAINER_AVATAR="/device/realme/RMX2173/maintainer.png"
 	
 # Device Information.
 	export FOX_ARCH=arm64
