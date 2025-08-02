@@ -65,3 +65,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 # Custom pic for the maintainer's info in about section
 	export OF_MAINTAINER_AVATAR="/device/realme/RMX2173/maintainer.png"
 	export FOX_VANILLA_BUILD=1
+	export OF_FLASHLIGHT_ENABLE=0
+	export OF_USE_GREEN_LED=0
+	export OF_SCREEN_H="2400"
+	export OF_STATUS_INDENT_LEFT="20"
+	export TARGET_DEVICE_ALT="RMX2173,RMX2173CN,RMX2175,RMX2175CN"
+	export OF_SUPPORT_OZIP_DECRYPTION=1
+	export OF_USE_MAGISKBOOT=1
+	export OF_FBE_METADATA_MOUNT_IGNORE=1
+	export OF_DEFAULT_KEYMASTER_VERSION=4.0
+	
