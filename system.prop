@@ -5,3 +5,4 @@ ro.product.device=RMX2173CN
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.gatekeeper=trustonic
 ro.treble.enabled=true
+ro.vndk.version=32
