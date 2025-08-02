@@ -5,10 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_RMX2173.mk
-
-COMMON_LUNCH_CHOICES := \
-    twrp_RMX2173-user \
-    twrp_RMX2173-userdebug \
-    twrp_RMX2173-eng
+LOCAL_PATH := device/realme/RMX2173
