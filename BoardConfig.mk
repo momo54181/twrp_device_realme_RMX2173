@@ -136,6 +136,7 @@ TW_INCLUDE_LOGICAL := my_product my_engineering my_company my_carrier my_region 
 # Crypto
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
+BOARD_USES_METADATA_PARTITION := true
 TW_USE_FSCRYPT_POLICY := 1
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
