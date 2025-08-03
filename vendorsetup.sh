@@ -17,25 +17,8 @@
 # 	
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="RMX2173"
 
-fox_get_target_device() {
-local chkdev=$(echo "$BASH_SOURCE" | grep \"$FDEVICE\")
-   if [ -n "$chkdev" ]; then
-      FOX_BUILD_DEVICE="$FDEVICE"
-   else
-      chkdev=$(set | grep BASH_ARGV | grep \"$FDEVICE\")
-      [ -n "$chkdev" ] && FOX_BUILD_DEVICE="$FDEVICE"
-   fi
-}
 
-if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
-   fox_get_target_device
-fi
-
-if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
-	TOPDIR="$PWD";
-	FDEVICE_DIR=$(dirname ${BASH_ARGV[0]});
 	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v28.1.zip
 	export FOX_ENABLE_APP_MANAGER=1
 	export FOX_USE_BASH_SHELL=1
@@ -72,4 +55,4 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export TARGET_DEVICE_ALT="RMX2173,RMX2173CN,RMX2175,RMX2175CN"
 	export OF_SUPPORT_OZIP_DECRYPTION=1
 	export OF_USE_MAGISKBOOT=1
-	export OF_DEFAULT_KEYMASTER_VERSION=4.1
+	export OF_DEFAULT_KEYMASTER_VERSION="4.1"
