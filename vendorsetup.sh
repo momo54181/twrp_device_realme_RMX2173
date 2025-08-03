@@ -39,7 +39,6 @@
 	fi
 
 	export OF_MAINTAINER="Momo5418"
-	export FOX_MAINTAINER_PATCH_VERSION="FBEv1"
 	export FOX_BUILD_TYPE="Unofficial-Stable"
     export OF_STATUS_H="102"
 	export OF_STATUS_INDENT_LEFT="155"
