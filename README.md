@@ -4,12 +4,12 @@
 
 | Basic | Spec Sheet |
 |---|---|
-| Display | 6.55-inch Super AMOLED display |
+| Display | 6.4-inch Super AMOLED display |
 | Processor | MediaTek Dimensity 800U |
 | RAM | 8GB |
 | Storage | 128GB/256GB |
-| Camera | 64MP main camera, 8MP ultrawide camera, 2MP macro camera |
-| Battery | 4200mAh |
+| Camera | 48MP main camera, 8MP ultrawide camera, 2MP macro camera |
+| Battery | 4300mAh |
 | Operating System | Android 10, upgradable to Android 12 |
 
 ![Realme Q2 Pro](https://static.realme.net/videos/pic/x7-pro/cn/dazzle.png)
