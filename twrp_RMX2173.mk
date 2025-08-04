@@ -28,9 +28,9 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/roo
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX2173
 PRODUCT_NAME := twrp_RMX2173
-PRODUCT_BRAND := realme
-PRODUCT_MODEL := realme Q2 Pro 5G
-PRODUCT_MANUFACTURER := realme
+PRODUCT_BRAND := Realme
+PRODUCT_MODEL := Realme Q2 Pro 5G
+PRODUCT_MANUFACTURER := Realme
 
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -54,3 +54,5 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_DEVICE="RMX2173CN"
