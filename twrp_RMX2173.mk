@@ -32,9 +32,6 @@ PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme Q2 Pro 5G
 PRODUCT_MANUFACTURER := realme
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.treble.enabled=true
-
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -46,3 +43,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 29
+
+
+# Keystore
+PRODUCT_PACKAGES += \
+    android.system.keystore2
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1
