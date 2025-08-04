@@ -14,16 +14,6 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl \
-    android.hardware.health@2.0-service \
-    android.hardware.health@2.0-impl.recovery
-
-# Drm
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4
-
 # Keystore
 PRODUCT_PACKAGES += \
     android.system.keystore2
