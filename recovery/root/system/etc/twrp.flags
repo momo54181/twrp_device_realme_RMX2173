@@ -7,7 +7,7 @@
 system            /system                 auto                        display="System"logical
 vendor            /vendor                 auto                        display="Vendor";logical
 product           /product                auto                        display="Product";logical
-odm               /odm                    auto                        display="ODM";logical
+odm               /odm                    auto                        display="Odm";logical
 
 # Common partition
 /boot             emmc    /dev/block/by-name/boot                     flags=backup=1;display="Boot";flashimg=1
