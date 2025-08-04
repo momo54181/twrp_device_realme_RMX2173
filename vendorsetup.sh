@@ -46,7 +46,7 @@
 	export OF_SCREEN_H="2400"
 # Custom pic for the maintainer's info in about section
 	export OF_MAINTAINER_AVATAR="/device/realme/RMX2173/maintainer.png"
-	export FOX_VANILLA_BUILD=1
+	#export FOX_VANILLA_BUILD=1
 	export OF_FLASHLIGHT_ENABLE=0
 	export OF_USE_GREEN_LED=0
 	export OF_SCREEN_H="2400"
