@@ -43,22 +43,16 @@ on property:ro.crypto.state=unsupported
     stop mobicore
     stop vendor.keymaster-4-1-trustonic
     stop vendor.gatekeeper-1-0
-    stop servicemanager
-    stop hwservicemanager
 
 on property:ro.crypto.state=unencrypted
     stop mobicore
     stop vendor.keymaster-4-1-trustonic
     stop vendor.gatekeeper-1-0
-    stop servicemanager
-    stop hwservicemanager
 
 on property:twrp.decrypt.done=true
     stop mobicore
     stop vendor.keymaster-4-1-trustonic
     stop vendor.gatekeeper-1-0
-    stop servicemanager
-    stop hwservicemanager
 
 on post-fs-data
     mkdir /data/vendor_de 0770 system system
