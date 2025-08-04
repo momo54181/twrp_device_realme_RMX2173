@@ -17,7 +17,7 @@ odm               /odm                    auto                        display="O
 /persist          ext4    /dev/block/by-name/persist                  flags=display="Persist";backup=1
 /persistent       emmc    /dev/block/by-name/frp                      flags=display="Persistent";backup=1
 /metadata         ext4    /dev/block/by-name/metadata                 flags=display="Metadata"
-
+/data             f2fs    /dev/block/by-name/userdata                 flags=fileencryption=aes-256-xts:aes-256-cts,keydirectory=/metadata/vold/metadata_encryption
 # Standard MediaTek's Partitions
 /proinfo          emmc    /dev/block/by-name/proinfo
 /para             emmc    /dev/block/by-name/para
