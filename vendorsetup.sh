@@ -44,6 +44,8 @@
 	export OF_STATUS_INDENT_LEFT="150"
 	export OF_STATUS_INDENT_RIGHT="20"
 	export OF_SCREEN_H="2400"
+	export OF_HIDE_NOTCH=1
+	export OF_CLOCK_POS=1
 # Custom pic for the maintainer's info in about section
 	export OF_MAINTAINER_AVATAR="/device/realme/RMX2173/maintainer.png"
 	#export FOX_VANILLA_BUILD=1
