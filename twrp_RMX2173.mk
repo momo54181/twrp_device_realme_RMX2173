@@ -47,7 +47,6 @@ PRODUCT_PACKAGES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-
 # Keystore
 PRODUCT_PACKAGES += \
     android.system.keystore2
