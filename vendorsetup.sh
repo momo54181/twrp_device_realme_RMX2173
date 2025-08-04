@@ -34,8 +34,10 @@
 	export FOX_USE_DYNAMIC_PARTITIONS=1; # all builds now support dynamic partitions
 	if [ "$FOX_USE_DYNAMIC_PARTITIONS" = "1" ]; then
    		export FOX_BASH_TO_SYSTEM_BIN=1; # install the bash binary to /system/bin/ instead of /sbin/
-		export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
-		export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+		export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/by-name/recovery"
+	    export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
+	    export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+	    export FOX_RECOVERY_BOOT_PARTITION="/dev/block/by-name/boot"
 	fi
 
 	export OF_MAINTAINER="Momo5418"
