@@ -9,7 +9,7 @@ on init
     symlink /vendor/lib64/hw/libSoftGatekeeper.so /vendor/lib64/hw/gatekeeper.default.so
     symlink /vendor/lib64/hw/libMcGatekeeper.so /vendor/lib64/hw/gatekeeper.${ro.hardware}.so
     symlink /vendor/lib64/hw/libMcGatekeeper.so /vendor/lib64/hw/gatekeeper.k6853v1_64_6360.so
-    start health-hal-2-1
+    start boot-hal-1-2
 
 on fs
     install_keyring
@@ -59,3 +59,5 @@ on post-fs-data
     mkdir /data/vendor_de/0 0770 system system
     mkdir /data/vendor_de/0/cryptoeng 0770 system system
 
+on boot
+    start health-hal-2-1
