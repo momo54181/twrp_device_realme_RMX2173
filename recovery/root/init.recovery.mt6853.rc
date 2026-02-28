@@ -6,7 +6,6 @@ on init
 
     # Create a more standard /dev/block layout for our scripts
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
-    symlink /vendor/lib64/hw/libSoftGatekeeper.so /vendor/lib64/hw/gatekeeper.default.so
     symlink /vendor/lib64/hw/libMcGatekeeper.so /vendor/lib64/hw/gatekeeper.${ro.hardware}.so
     symlink /vendor/lib64/hw/libMcGatekeeper.so /vendor/lib64/hw/gatekeeper.k6853v1_64_6360.so
     start boot-hal-1-2
@@ -37,7 +36,7 @@ service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-ser
 on property:hwservicemanager.ready=true
     start mobicore
     start vendor.keymaster-4-1-trustonic
-    start gatekeeper-1-0
+    start vendor.gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
     stop mobicore
